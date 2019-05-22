@@ -14,21 +14,19 @@
 
 1. 先准备好你在谷歌学术或者百度学术导出的文献，统一放进一个txt中，as follow
 
-    ![txt文本](https://github.com/wuhuanqi/PaperFormat/blob/master/1557906685340.png)
+    ![txt文本](<https://github.com/fanxingq/PaperFormat/blob/master/img/paper.png>)
 
 2. 将程序导入idea||eclipse，运行。
 
-3. 输入要读取的文本文件的路径名称的地址，
+3. 操作界面如图
 
-    输入要写入的文本文件
-
-    选择是否覆盖原文本文件，等待...
+    ![运行示意图](<https://github.com/fanxingq/PaperFormat/blob/master/img/runImg.png>)
 
 4. 大功告成！最后你只需要把结果粘贴到word中即可。（建议先进行标号，粘贴过去就直接有序号了）
 
    运行效果如图所示：
 
-   ![运行示意图](https://github.com/wuhuanqi/PaperFormat/blob/master/1557906959095.png)
+   ![运行结果图](<https://github.com/fanxingq/PaperFormat/blob/master/img/result.png>)
 
 <dsdssdvgsdds>
 
