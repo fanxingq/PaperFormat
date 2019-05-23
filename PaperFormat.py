@@ -42,7 +42,7 @@ except FileNotFoundError:
 for line in fin.readlines():
     if re.match(ChineseDegree, line):
         # print("是学位论文")
-        reg = re.compile('^(?P<author>[^ ]*)\. (?P<title>[^ ]*)\[D\]\.(?P<school>[^ ]*),(?P<date>[^ ]*)\.')
+        reg = re.compile('^(?P<author>.*)\. (?P<title>.*)\[D\]\.(?P<school>.*),(?P<date>.*)\.')
         linebits = reg.match(line).groupdict()
         print(linebits)
         #防止split空指针异常
@@ -100,7 +100,6 @@ for line in fin.readlines():
         reg = re.compile('^(?P<author>.*)\. (?P<title>.*)\[J\]\. (?P<Journal>.*), (?P<date_pages>.*)\.')
         linebits = reg.match(line).groupdict()
         print(linebits)
-        # TODO: 人名三个数等
         # 修改页码-为~，替换并更新字典
         linebits.update({'date_pages': linebits.get('date_pages').replace('-', '~')})
         # 遍历字典中的k,v
